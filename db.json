@@ -45,6 +45,14 @@
       "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlydGhkYXklMjBjYWtlc3xlbnwwfHwwfHw%3D&w=1000&q=80",
       "instructions": "1) add tea spon rice    2) cook idle in sambar  3) add flavour ",
       "id": 7
+    },
+    {
+      "title": "wada ",
+      "ingredients": "rice , splices , sambar , spoon ",
+      "time_to_cook": "10 min",
+      "image": "https://image.shutterstock.com/image-photo/medu-wada-vadai-south-indian-260nw-1671431380.jpg",
+      "instructions": "1) bake it   2) cook it 3) freid it 4 ) eat it ",
+      "id": 8
     }
   ]
 }
