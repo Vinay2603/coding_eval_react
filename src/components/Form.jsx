@@ -4,8 +4,9 @@ import styled from "styled-components"
 const Div = styled.div`
  border :1px solid black;
   margin: 4%;
-  padding : 2% ;
-  dispaly : flex
+  padding : 0.5% ;
+  dispaly : flex 
+
 `
 const Formbox = styled.div`
  border :1px solid black;
@@ -19,8 +20,8 @@ const Otherbox = styled.div`
  border :1px solid black;
   margin: 4%;
   padding : 2%;
-  width : 900px;
-  height : 10000px
+  width : 400px;
+  
   overflow: scroll;
 `
 const Mainshow = styled.div`
@@ -33,14 +34,27 @@ const Mainshow = styled.div`
  & >div:nth-child(1){
      font-size : 32px
  }
+& > div{
+    padding-left : 30px ;
+    padding-right : 30px 
+}
+`
+const StoryBox = styled.div`
+ border :1px solid black;
+ text-align: center;
+ width : 800px;
+ margin-left : 20%;
+ padding : 2%;
+ background-color: #FED1EF;
 
- 
 
 `
+
+
 export const Form =()=>{
 const [formdata,setFormdata] = useState({})
 const [show,setShow ] = useState([])
-
+const [detail, setDetail] = useState([])
   useEffect(()=>{
       getRecepi()
   },[])
@@ -69,16 +83,33 @@ const [show,setShow ] = useState([])
             },
         }).then(()=>{
             getRecepi()
+           
         })
     } 
   
      const getRecepi=()=>{
          fetch("http://localhost:3001/show").then((d)=>d.json()).then((res)=>{
-             console.log(res)
+             console.log("res", res)
              setShow(res)
             })
      }
+const handleDetail=(singleitem)=>{
+      console.log(singleitem)
+      setDetail([...detail,singleitem])
+}
 
+const handleSort =()=>{
+    fetch("http://localhost:3001/show?_sort=title&_order=asc").then((d)=>d.json()).then((res)=>{
+        console.log(res)
+        setShow(res)
+       })
+}
+const handleFilter =()=>{
+    fetch("http://localhost:3001/show?title=wada").then((d)=>d.json()).then((res)=>{
+        console.log(res)
+        setShow(res)
+       })
+}
     return(
         <>
         <Div >
@@ -95,7 +126,7 @@ const [show,setShow ] = useState([])
                     <br/>
                     <br/>
                     <label >time to cook: </label>
-                    <input name="time to cook" type="text" placeholder="Enter time " onChange={handleChange}/>
+                    <input name="time_to_cook" type="text" placeholder="Enter time " onChange={handleChange}/>
                     <br/>
                     <br/>
                     <label >image URL: </label>
@@ -113,21 +144,39 @@ const [show,setShow ] = useState([])
                <br/>
                <br/>
             <Otherbox>
+                    <button onClick={handleSort}>Sort</button>
+                    <button onClick={handleFilter}>Filter </button>
                     {show.map((el)=>(
-                  <Mainshow>
-                         <div>{el.title}</div>
-                         <div>
-                         <img src={el.image} /> 
-                         </div>
-                        
-
+                  <Mainshow onClick={()=>handleDetail(el)}>
+                          
+                         <div> {el.title}</div>
+                         <div>{el.time_to_cook}</div>
                   </Mainshow>
                   
 
                     ))}
             </Otherbox>   
               
-         </Div>    
+         </Div>  
+
+    <StoryBox >
+          {detail.map((el)=>
+          <div>
+              <h2>{el.title}</h2>
+             
+              <img src={el.image} alt="img" />
+
+              <h5>Time required : {el.time_to_cook}</h5>
+
+              <h3>Ingredients  required : </h3>
+              <p>{el.ingredients}  </p>
+
+              <h3>Instructions :</h3>
+              <p>{el.instructions}</p>
+          </div>
+          
+          )}
+    </StoryBox>
         </>
 
     )
