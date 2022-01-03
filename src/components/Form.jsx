@@ -6,7 +6,7 @@ const Div = styled.div`
   margin: 4%;
   padding : 0.5% ;
   dispaly : flex 
-
+  background-color: #FED1EF;
 `
 const Formbox = styled.div`
  border :1px solid black;
@@ -105,7 +105,7 @@ const handleSort =()=>{
        })
 }
 const handleFilter =()=>{
-    fetch("http://localhost:3001/show?title=wada").then((d)=>d.json()).then((res)=>{
+    fetch("http://localhost:3001/show?id=7").then((d)=>d.json()).then((res)=>{
         console.log(res)
         setShow(res)
        })
