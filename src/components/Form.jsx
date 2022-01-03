@@ -5,14 +5,15 @@ const Div = styled.div`
  border :1px solid black;
   margin: 4%;
   padding : 0.5% ;
-  dispaly : flex 
-  background-color: #FED1EF;
+  dispaly : flex; 
+  background-color: #F9F3DF;
 `
 const Formbox = styled.div`
  border :1px solid black;
   margin: 4%;
   padding : 2%;
-  width : 200px
+  width : 200px;
+  background-color: #CDF2CA;
  
 `
 
@@ -21,11 +22,16 @@ const Otherbox = styled.div`
   margin: 4%;
   padding : 2%;
   width : 400px;
-  
+  height : 400px;
+  background-color: #FFC898;
   overflow: scroll;
+  position : absolute;
+  top: 10%;
+  left: 50%;
 `
 const Mainshow = styled.div`
- border :1px solid black;
+ border :3px solid black;
+ font-weight : 700;
   margin: 4%;
   padding : 2%;
   display : flex;
@@ -113,7 +119,7 @@ const handleFilter =()=>{
     return(
         <>
         <Div >
-                
+                 
              <Formbox >
                  <h1>ADD RECEPI</h1>
                 <form  onSubmit={addRecepi}>
