@@ -1,66 +1,36 @@
 {
   "show": [
     {
-      "title": "dosa ",
-      "ingredients": "whe",
-      "id": 1
-    },
-    {
-      "ingredients": "wheat , floor ",
-      "time_to_cook": "10 min ",
-      "image": "https://media.istockphoto.com/photos/masala-dosa-south-indian-food-picture-id909906350?k=20&m=909906350&s=612x612&w=0&h=lGGUz3p1-ILSWnEZtUFtqp7DVJmEW6AefTQQlZwR510=",
-      "instructions": "1) bake it   2) cook it 3) freid it 4 ) eat it ",
-      "id": 2
-    },
-    {
-      "title": "wada ",
-      "ingredients": "wheat , floor , rice , spices ",
-      "time_to_cook": "20 min ",
+      "title": "wada  ",
+      "ingredients": "wheat",
+      "time_to_cook": "20 min",
       "image": "https://image.shutterstock.com/image-photo/medu-wada-vadai-south-indian-260nw-1671431380.jpg",
-      "id": 3
-    },
-    {
-      "title": "idle ",
-      "image": "https://image.shutterstock.com/image-photo/idly-sambar-idli-sambhar-green-260nw-1705774453.jpg",
-      "id": 4
-    },
-    {
-      "title": "chiken roll ",
-      "time_to_cook": "30 min ",
-      "image": "https://static.toiimg.com/thumb/53210540.cms?imgsize=166061&width=800&height=800",
-      "id": 5
-    },
-    {
-      "title": "wada ",
-      "ingredients": "rice , splices , sambar , spoon ",
-      "time_to_cook": "10 min",
-      "image": "https://image.shutterstock.com/image-photo/medu-wada-vadai-south-indian-260nw-1671431380.jpg",
-      "instructions": "1) bake it   2) cook it 3) freid it 4 ) eat it ",
-      "id": 6
-    },
-    {
-      "title": "cake ",
-      "ingredients": "rice , splices , sambar , spoon ",
-      "time_to_cook": "50 min",
-      "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlydGhkYXklMjBjYWtlc3xlbnwwfHwwfHw%3D&w=1000&q=80",
-      "instructions": "1) add tea spon rice    2) cook idle in sambar  3) add flavour ",
+      "instructions": "try it yourself",
       "id": 7
     },
     {
-      "title": "wada ",
-      "ingredients": "rice , splices , sambar , spoon ",
+      "title": "dosa ",
+      "ingredients": "wheat",
       "time_to_cook": "10 min",
-      "image": "https://image.shutterstock.com/image-photo/medu-wada-vadai-south-indian-260nw-1671431380.jpg",
-      "instructions": "1) bake it   2) cook it 3) freid it 4 ) eat it ",
+      "image": "https://media.istockphoto.com/photos/masala-dosa-south-indian-food-picture-id909906350?k=20&m=909906350&s=612x612&w=0&h=lGGUz3p1-ILSWnEZtUFtqp7DVJmEW6AefTQQlZwR510=",
+      "instructions": "try it yourself",
       "id": 8
     },
     {
-      "title": "aaxx",
-      "ingredients": "axaaxa",
-      "time_to_cook": "10 min",
-      "image": "https://image.shutterstock.com/image-photo/medu-wada-vadai-south-indian-260nw-1671431380.jpg",
-      "instructions": "try it",
+      "title": "idle",
+      "ingredients": "rice , splices , sambar , spoon ",
+      "time_to_cook": "30 min ",
+      "image": "https://image.shutterstock.com/image-photo/idly-sambar-idli-sambhar-green-260nw-1705774453.jpg",
+      "instructions": "1) add tea spon rice    2) cook idle in sambar  3) add flavour ",
       "id": 9
+    },
+    {
+      "title": "idle-wada",
+      "ingredients": "rice , ",
+      "time_to_cook": "20 min ",
+      "image": "https://static.toiimg.com/thumb/53210540.cms?imgsize=166061&width=800&height=800",
+      "instructions": "1) bake it   2) cook it 3) freid it 4 ) eat it ",
+      "id": 10
     }
   ]
 }
