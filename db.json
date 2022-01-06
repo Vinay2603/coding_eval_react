@@ -53,6 +53,14 @@
       "image": "https://image.shutterstock.com/image-photo/medu-wada-vadai-south-indian-260nw-1671431380.jpg",
       "instructions": "1) bake it   2) cook it 3) freid it 4 ) eat it ",
       "id": 8
+    },
+    {
+      "title": "aaxx",
+      "ingredients": "axaaxa",
+      "time_to_cook": "10 min",
+      "image": "https://image.shutterstock.com/image-photo/medu-wada-vadai-south-indian-260nw-1671431380.jpg",
+      "instructions": "try it",
+      "id": 9
     }
   ]
 }
